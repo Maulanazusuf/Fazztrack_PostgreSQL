@@ -1,0 +1,26 @@
+CREATE DATABASE db_latihan001;
+USE db_latihan001;
+
+CREATE TABLE tbl_users(
+	id INT(11),
+	username VARCHAR (255)NOT NULL,
+	email VARCHAR (255)NOT NULL,
+	Password VARCHAR (255)NOT NULL,
+	Address TEXT,
+	PRIMARY KEY(id)
+);
+
+SELECT * FROM tbl_users;
+
+INSERT INTO tbl_users (id,username,email,password,address)
+VALUES ('122','coba1','coba@gmail.com','123','jakarta');
+
+SELECT * FROM tbl_users; 
+
+UPDATE tbl_users SET username ='coba1' WHERE address ='jakarta';
+
+SELECT * FROM tbl_users;//CHECK TABLE
+
+DELETE FROM tbl_users Where id ='122';
+
+SELECT * FROM tbl_users;
